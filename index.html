@@ -16,7 +16,7 @@
     <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
       If you're not using Tailwind, you may delete the <script> -->
     <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <link rel="icon" href="img/favicon.ico" sizes="any" />
     <style>
@@ -25,9 +25,69 @@
   </head>
   <body>
     <!-- Add your site or application content here -->
-    <h1 class="text-5xl text-center font-semibold pt-20">
+    <!-- <h1 class="text-5xl text-center font-semibold pt-20">
       Hello world! Write your content here.
-    </h1>
+    </h1> -->
+
+    <div class="h-screen flex flex-col">
+      <div class="h-full grid grid-cols-4 gap-4 p-4 md:grid-cols-6 md:gap-8 md:p-8 min-[1440px]:grid-cols-12!">
+        <div class="col-span-full flex flex-col items-center">
+          <div class="w-[300px] flex flex-col gap-6 pt-46 md:pt-42">
+            <div role="tablist" class="flex gap-6 border-b border-neutral-300">
+              <button
+                class="tabs__button relative aria-selected:text-indigo-700 aria-selected:after:content-[''] aria-selected:after:absolute aria-selected:after:left-0 aria-selected:after:right-0 aria-selected:after:-bottom-[1px] aria-selected:after:h-[2px] aria-selected:after:bg-indigo-600 hover:text-neutral-900 focus:text-neutral-900 aria-selected:hover:text-indigo-800 aria-selected:focus:text-indigo-800 px-2 pb-3 font-medium text-base text-neutral-600 cursor-pointer"
+                role="tab"
+                aria-selected="true"
+                aria-controls="account"
+                data-value="account"
+                tabindex="0"
+              >
+                Account
+              </button>
+              <button
+                class="tabs__button relative aria-selected:text-indigo-700 aria-selected:after:content-[''] aria-selected:after:absolute aria-selected:after:left-0 aria-selected:after:right-0 aria-selected:after:-bottom-[1px] aria-selected:after:h-[2px] aria-selected:after:bg-indigo-600 hover:text-neutral-900 focus:text-neutral-900 aria-selected:hover:text-indigo-800 aria-selected:focus:text-indigo-800 px-2 pb-3 font-medium text-base text-neutral-600 cursor-pointer"
+                role="tab"
+                aria-selected="false"
+                aria-controls="security"
+                data-value="security"
+                tabindex="0"
+              >
+                Security
+              </button>
+              <button
+                class="tabs__button relative aria-selected:text-indigo-700 aria-selected:after:content-[''] aria-selected:after:absolute aria-selected:after:left-0 aria-selected:after:right-0 aria-selected:after:-bottom-[1px] aria-selected:after:h-[2px] aria-selected:after:bg-indigo-600 hover:text-neutral-900 focus:text-neutral-900 aria-selected:hover:text-indigo-800 aria-selected:focus:text-indigo-800 px-2 pb-3 font-medium text-base text-neutral-600 cursor-pointer"
+                role="tab"
+                aria-selected="false"
+                aria-controls="plan"
+                data-value="plan"
+                tabindex="0"
+              >
+                Plan
+              </button>
+            </div>
+            <div class="font-medium text-base text-black">
+              <div class="tabs__panel" id="account" role="tabpanel" data-value="account">
+                The Account Management section provides a comprehensive view of
+                your personal information and settings. Here, you can update your
+                profile details, manage contact information, and customize your
+                preferences to enhance your user experience.
+              </div>
+              <div class="tabs__panel hidden" id="security" role="tabpanel" data-value="security">
+                The Security Settings section is dedicated to protecting your
+                account and personal data. Here, you can manage various security
+                features to ensure your information remains safe and secure.
+              </div>
+              <div class="tabs__panel hidden" id="plan" role="tabpanel" data-value="plan">
+                The Subscription Plan section provides details about your current
+                plan and available upgrades. Here, you can review your plan’s
+                benefits, manage billing information, and explore other
+                subscription options to find the best fit for your needs.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Attribute this challenge to yourself! -->
     <div class="credits" data-gfe-screenshot-exclude="true">
@@ -38,9 +98,9 @@
         >GreatFrontEnd Projects</a
       >. Built by
       <a
-        href="https://www.greatfrontend.com/projects/u/username"
+        href="https://www.greatfrontend.com/projects/u/codersjj"
         target="_blank"
-        >Your Name</a
+        >Shane</a
       >.
     </div>
     <script src="js/index.js"></script>
